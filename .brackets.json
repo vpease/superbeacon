@@ -1,0 +1,14 @@
+{
+    "jscodehints.detectedExclusions": [
+        "F:/projects/superbeacon/plugins/com.unarin.cordova.beacon/www/model/BeaconRegion.js",
+        "F:/projects/superbeacon/plugins/com.unarin.cordova.beacon/www/model/CircularRegion.js",
+        "F:/projects/superbeacon/plugins/com.unarin.cordova.beacon/www/model/Region.js",
+        "F:/projects/superbeacon/plugins/com.unarin.cordova.beacon/www/Delegate.js",
+        "F:/projects/superbeacon/plugins/com.unarin.cordova.beacon/www/LocationManager.js",
+        "F:/projects/superbeacon/plugins/com.unarin.cordova.beacon/www/Regions.js",
+        "F:/projects/superbeacon/plugins/cordova-plugin-console/www/console-via-logger.js",
+        "F:/projects/superbeacon/plugins/cordova-plugin-console/www/logger.js",
+        "F:/projects/superbeacon/plugins/cordova-plugin-device/src/blackberry10/index.js",
+        "F:/projects/superbeacon/platforms/android/assets/www/lib/ionic/js/ionic.min.js"
+    ]
+}

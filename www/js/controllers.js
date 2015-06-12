@@ -31,9 +31,18 @@ angular.module('starter.controllers', [])
         var minor = "4159";
 
         $scope.getLogo = function (minor) {
-            if (minor === 4159) return 'img/logos/tienda01.png';
-            if (minor === 4113) return 'img/logos/tienda02.png';
-            if (minor === 4079) return 'img/logos/tienda03.png';
+            var res;
+            if (minor == 4159){
+                res = 'img/logos/tienda01.png';
+            }
+            if (minor == 4113){
+                res = 'img/logos/tienda02.png';
+            }
+            if (minor == 4079){
+                res = 'img/logos/tienda03.png';
+            }
+            console.log('la imagen es: '+ res);
+            return res;
         };
 
         $scope.tienda = {
@@ -66,9 +75,12 @@ angular.module('starter.controllers', [])
             pluginResult.timestamp = new Date();
 
             console.log('el resultado plugin es: ' + JSON.stringify(pluginResult));
-            $scope.beacons = pluginResult.beacons;
-            $scope.$apply();
-            $scope.updateRangedRegions();
+            if (pluginResult.beacons.length>0){
+                $scope.beacons = pluginResult.beacons;
+                $scope.$apply();
+                $scope.updateRangedRegions();
+            }
+
         };
 
         cordova.plugins.locationManager.requestAlwaysAuthorization();

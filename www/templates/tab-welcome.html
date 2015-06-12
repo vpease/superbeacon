@@ -1,0 +1,16 @@
+<ion-view view-title="SuperMall">
+    <ion-content class="padding" has-header="true">
+        <div class="bg">
+            <img src="img/logos/entrada.png">
+        </div>
+
+        <div class='tiendas'>
+            <ion-list>
+                <ion-item ng-repeat="beacon in beacons track by beacon.minor | orderBy:beacon.rssi">
+                    <img class="tienda" ng-src="{{ getLogo(beacon.minor) }}">
+                    <!--img ng-src={{getLogo(beacon.minor)}}∫ -->
+                </ion-item>
+            </ion-list>
+        </div>
+    </ion-content>
+</ion-view>

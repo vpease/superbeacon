@@ -9,6 +9,8 @@
         "F:/projects/superbeacon/plugins/cordova-plugin-console/www/console-via-logger.js",
         "F:/projects/superbeacon/plugins/cordova-plugin-console/www/logger.js",
         "F:/projects/superbeacon/plugins/cordova-plugin-device/src/blackberry10/index.js",
-        "F:/projects/superbeacon/platforms/android/assets/www/lib/ionic/js/ionic.min.js"
+        "F:/projects/superbeacon/platforms/android/assets/www/lib/ionic/js/ionic.min.js",
+        "/Users/vpease/Documents/github/superbeacon/platforms/ios/www/lib/angular-ui-router/src/urlRouter.js",
+        "/Users/vpease/Documents/github/superbeacon/platforms/ios/www/lib/angular-ui-router/src/view.js"
     ]
 }

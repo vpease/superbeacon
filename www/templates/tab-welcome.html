@@ -6,7 +6,8 @@
 
         <div class='tiendas'>
             <ion-list>
-                <ion-item ng-repeat="beacon in beacons track by beacon.minor ">
+                <ion-item ng-repeat="beacon in beacons track by beacon.minor | orderBy: 'rssi' desc | filter: 'rssi<0'">
+                    {{JSON.stringify(beacon)}}
                     <img class="tienda" ng-src="{{ getLogo(beacon.minor) }}">
                     <!--img ng-src={{getLogo(beacon.minor)}}∫ -->
                 </ion-item>
